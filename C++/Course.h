@@ -17,7 +17,7 @@ public:
     std::string getNamaMatakuliah() const;
     void setNamaMatakuliah(string nama_matakuliah);
 
-    // operator ==
+    // operator ==, menghindar duplikasi, bandingin dua objek course
     bool operator==(const Course& other) const {
         return this->getNamaMatakuliah() == other.getNamaMatakuliah();
     }
