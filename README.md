@@ -31,35 +31,36 @@ Desain yang saya buat menggunakan 6 Class:
 Dengan tambahan file Main untuk menampilkan seluruh data mahasiswa; dicari berdasarkan `NIM` dan data dosen berdasarkan `NIP` termasuk `course` yang mereka miliki.
 
 Atribut pada masing-masing kelas:
-1.Kelas Human:
--int _NIK; (integer)
--std::string _nama; (string)
--std::string _jenis_kelamin; (string)
+* 1.Kelas Human:
+  - int _NIK; (integer)
+  - std::string _nama; (string)
+  - std::string _jenis_kelamin; (string)
 
-2.Kelas SivitasAkademik:
--std::string _asal_universitas; (string)
--std::string _email_edu; (string)
+* 2.Kelas SivitasAkademik:
+  - std::string _asal_universitas; (string)
+  - std::string _email_edu; (string)
 
-3.Kelas Course:
--std::string _nama_matakuliah; (string)
-4.Kelas Mahasiswa (turunan dari kelas Human dan SivitasAkademik):
--int _NIM; (integer)
--std::string _fakultas; (string)
--std::string _prodi; (string)
--std::liststd::string _courses; (list of strings)
+* 3.Kelas Course:
+  - std::string _nama_matakuliah; (string)
 
-5.Kelas ProgramStudi:
--std::string _nama_prodi; (string)
--std::string _kode; (string)
--std::list<Course> _courses; (list of Course objects)
+* 4.Kelas Mahasiswa (turunan dari kelas Human dan SivitasAkademik):
+  - int _NIM; (integer)
+  - std::string _fakultas; (string)
+  - std::string _prodi; (string)
+  - std::liststd::string _courses; (list of strings)
 
-6.Kelas Dosen (turunan dari kelas Human dan SivitasAkademik):
--std::string _NIP; (string)
--std::string _fakultas; (string)
--std::string _prodi; (string)
--std::string _pend_terakhir; (string)
--std::string _keahlian; (string)
--std::list<Course> _courses; (list of Course objects)
+* 5.Kelas ProgramStudi:
+  - std::string _nama_prodi; (string)
+  - std::string _kode; (string)
+  - std::list<Course> _courses; (list of Course objects)
+
+* 6.Kelas Dosen (turunan dari kelas Human dan SivitasAkademik):
+  - std::string _NIP; (string)
+  - std::string _fakultas; (string)
+  - std::string _prodi; (string)
+  - std::string _pend_terakhir; (string)
+  - std::string _keahlian; (string)
+  - std::list<Course> _courses; (list of Course objects)
 
 terdapat tambahan method untuk menambahkan course, menghapus, mengambil course, pembanding course(pengalih agar tidak redef).
 `ralat pada diagram` tidak ada method tampilkaninfo(), menampilkan atribut dilakukan pada blok `main`
@@ -93,8 +94,8 @@ _Semua Class diatas dilengkapi dengan setter dan getternya_
 ## Dokumentasi
 **Program C++**
 
-![C++ program](LATIHAN4/C++/C++1.jpeg)
-![C++ program](LATIHAN4/C++/C++2.jpeg)
-![Diagram program](LATIHAN4/UMLLAT3.jpeg)
+![C++ program](C++/C++1.jpeg)
+![C++ program](C++/C++2.jpeg)
+![Diagram program](UMLLAT4.jpeg)
 
 
